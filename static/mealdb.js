@@ -7,14 +7,15 @@ const loadMealData = async(searchText) => {
         displayMealData(data.meals);
         // console.log(data.meals);
     } catch (error) {
-        console.log(error);
+      console.log(error);
         const mealContainer = document.getElementById('mealContainer');
         mealContainer.innerHTML = `
         <div class="flex items-center justify-center">
         <h1 class="text-3xl text-btnColor font-medium text-center">Wrong Input. Please Try Again and Search Any Food Name...</h1>
         </div>
-        `
-
+        `;
+        const seeMoreBtn = document.getElementById('show-more-btn');
+        seeMoreBtn.classList.add('hidden');
     }
 }
 
