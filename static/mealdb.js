@@ -8,8 +8,16 @@ const loadMealData = async(searchText) => {
         // console.log(data.meals);
     } catch (error) {
         console.log(error);
+        const mealContainer = document.getElementById('mealContainer');
+        mealContainer.innerHTML = `
+        <div class="flex items-center justify-center">
+        <h1 class="text-3xl text-btnColor font-medium text-center">Wrong Input. Please Try Again and Search Any Food Name...</h1>
+        </div>
+        `
+
     }
 }
+
 const displayMealData = meal => {
     // console.log(meal);
     const mealContainer = document.getElementById('mealContainer');
@@ -41,8 +49,10 @@ const displayMealData = meal => {
 }
 const searchText = () => {
     const searchValue = document.getElementById('meal-search').value;
+
     // console.log(searchValue);
     loadMealData(searchValue);
+
 }
 
 const loadMealDetails = async(idMeal) => {
