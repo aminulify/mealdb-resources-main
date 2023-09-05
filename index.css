@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif !important;
+    scroll-behavior: smooth;
+}
+
+.align-both {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.first-section {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.358), rgba(0, 0, 0, 0.116)), url("images/banner_1.png");
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.child-section p {
+    color: white;
+    padding: 15px 0;
+}
+
+.child-section h1 {
+    color: white;
+}
+
+footer h2 {
+    font-weight: 700;
+}
+
+footer div a,
+p {
+    font-size: 15px;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasty Hub</title>
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        btnColor: '#FFC107',
+                        btnHoverColor: '#f9b700',
+                        textColor: '#403F3F',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- font style  -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- css connect  -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<style>
+
+</style>
+
+<body>
+    <header id="home" class="bg-white">
+        <nav class="align-both mx-16 py-5">
+            <h2 class="text-2xl text-textColor font-bold">Tasty HUB</h2>
+            <button class="btn text-textColor py-3 px-8 rounded-lg bg-btnColor font-medium hover:bg-btnHoverColor hover:text-white ease-in duration-200">Sign Up</button>
+        </nav>
+
+    </header>
+    <main>
+        <section class="first-section text-center px-10 md:px-20 lg:px-96">
+            <div class="child-section">
+                <h1 class="font-bold text-4xl lg:text-5xl ">Taste Our Delicious Best Foods</h1>
+                <p class="text-sm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humou.</p>
+                <!-- search section  -->
+
+
+                <div>
+                    <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+            </svg>
+                        </div>
+                        <input type="search" id="meal-search" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500" placeholder="Search Any Food..." required>
+                        <button onclick="searchText()" type="submit" class="text-textColor absolute right-2.5 bottom-2.5 bg-btnColor hover:bg-btnHoverColor hover:text-white font-medium rounded-lg text-sm px-4 py-2  ease-in duration-200">Search</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- food sort section  -->
+        <section class="meal-section text-center" id="feature">
+            <h1 class="text-4xl font-bold my-10 text-textColor">Your Favourite Food</h1>
+            <!-- meals  -->
+            <!-- meals  -->
+            <div id="mealContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 px-10 lg:px-32 md:px-16 pb-10">
+
+            </div>
+
+            <button id="show-more-btn" class="show-more-btn btn text-textColor py-3 px-8 rounded-lg bg-btnColor font-medium hover:bg-btnHoverColor hover:text-white ease-in duration-200">Show More</button>
+        </section>
+
+
+        <!-- modal  -->
+        <!-- modal  -->
+        <div class="modal h-screen w-full fixed overflow-y-scroll left-0 top-0 flex justify-center items-center bg-black bg-opacity-50 hidden">
+
+
+            <div id="view-details">
+
+
+
+            </div>
+
+        </div>
+
+        <footer class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-10 lg:px-36 mt-10 py-10 bg-yellow-100">
+            <div class="first-footer grid m-2 lg:m-0">
+                <h2>Section</h2>
+                <a href="#home">Home</a>
+                <a href="#feature">Features</a>
+                <a href="#">Pricing</a>
+                <a href="#">FAQs</a>
+                <a href="#about">About</a>
+            </div>
+            <div class="second-section grid m-2 lg:m-0">
+                <h2>Section</h2>
+                <a href="#">UI/UX Design</a>
+                <a href="#">Product Design</a>
+                <a href="#">Back End Developer</a>
+                <a href="#">Front End Developer</a>
+            </div>
+            <div class="third-section grid m-2 lg:m-0">
+                <h2>Resource</h2>
+                <a href="#">FAQ</a>
+                <a href="#">Support</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <div class="forth-section grid m-2 lg:m-0">
+                <h2>Subscribe to our newsletter</h2>
+                <p class="text-black py-4">There are many variations of passages of available, but the majority have suffered</p>
+
+                <form class="flex items-center">
+                    <div class="relative w-full">
+                        <input type="text" id="voice-search" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 dark:placeholder-gray-400" placeholder="Email Address" required>
+                    </div>
+                    <button type="submit" class="inline-flex items-center py-2.5 px-3 ml-2 text-sm font-medium text-textColor bg-btnColor rounded-lg hover:bg-btnHoverColor hover:text-white ease-in duration-200">Subscribe
+                    </button>
+                </form>
+
+            </div>
+        </footer>
+
+
+    </main>
+
+
+
+
+    <!-- javascript connect  -->
+    <script src="static/mealdb.js "></script>
+</body>
+
+</html>
