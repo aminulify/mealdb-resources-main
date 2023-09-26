@@ -10,5 +10,5 @@
 <b>Live Link: <a href="https://mdaminul1024.github.io/mealdb-resources-main/">Live Link</a><b>
 
 <br>
-<img src="images/meal-img.jpg" alt="website demo image" style="margin-top:5px;">
+<img src="images/meal-img.JPG" alt="website demo image" style="margin-top:5px;">
 
