@@ -7,7 +7,7 @@
   <li>Javascript</li>
   <li>JSON API</li>
 </ul>
-<b>Live Link: <a href="https://mdaminul1024.github.io/mealdb-resources-main/">Live Link</a><b>
+<b>Live Link: <a href="https://aminulify.github.io/mealdb-resources-main/">Live Link</a><b>
 
 <br>
 <img src="images/meal-img.JPG" alt="website demo image" style="margin-top:5px;">
